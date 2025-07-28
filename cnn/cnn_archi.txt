@@ -1,0 +1,31 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv1d (Conv1D)             (None, 20, 64)            256       
+                                                                 
+ batch_normalization (BatchN  (None, 20, 64)           256       
+ ormalization)                                                   
+                                                                 
+ dropout (Dropout)           (None, 20, 64)            0         
+                                                                 
+ conv1d_1 (Conv1D)           (None, 18, 32)            6176      
+                                                                 
+ batch_normalization_1 (Batc  (None, 18, 32)           128       
+ hNormalization)                                                 
+                                                                 
+ dropout_1 (Dropout)         (None, 18, 32)            0         
+                                                                 
+ flatten (Flatten)           (None, 576)               0         
+                                                                 
+ dense (Dense)               (None, 64)                36928     
+                                                                 
+ dropout_2 (Dropout)         (None, 64)                0         
+                                                                 
+ dense_1 (Dense)             (None, 1)                 65        
+                                                                 
+=================================================================
+Total params: 43,809
+Trainable params: 43,617
+Non-trainable params: 192
+_________________________________________________________________
